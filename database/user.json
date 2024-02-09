@@ -1,10 +1,10 @@
 {
-    "name": "Mukhammadali",
+    "name": "Nurlanbek (NEO)",
     "profession": "Front-End Developer",
     "age": "20",
     "residence": "S.Korea",
     "address": "S.Korea, Busan",
-    "languages": ["Uzbek", "Korean", "English"],
+    "languages": ["Uzbek", "Korean"],
     "skills": ["Html", "Css", "Js", "NodeJS", "Python"],
     "extra_skills": ["Bootstrap, Materialize", "Styling, Sass", "Django, Flask", "GIT Knowledge"],
     "work_place": "IT Company",

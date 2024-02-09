@@ -2,17 +2,100 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>REJA</title>
-    <link
+    <link rel="stylesheet" href="/main.css">
+   
+    <link     
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
+      />
+      <script> src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"</script>
+      <title>Portfolio</title>
   </head>
-  <body style="background-color: #b8bbd1">
-    <!-- SHU YERDAN YOZASIZ -->
-    <div> SALOM</div>
+  <body>
+    <div class="frame">
+      <div class="main_frame">
+        <!--chap ramkasi-->
+        <div class="left_frame">
+          <!--chap ramka_1-->
+          <div class="left_1">
+            <div class="left_1-1">
+              <img src="images/profile.png" width="156px" height="142px" alt=""
+              />
+            </div>
+            <div class="left_1-2"><%=user.name%></div>
+            <div class="left_1-3"><%=user.profession%></div>
+            <div class="left_1-icons">
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Vector.svg" class="icon-1"/>
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Vector-1.svg" class="icon-1"/>
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Vector-2.svg" class="icon-1"/>
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Vector-3.svg" class="icon-1"/>
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Vector-4.svg" class="icon-1"/>
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Vector-5.svg" class="icon-1"/>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--/chap ramka_1-->
+          <div class="margin"></div>
+          <!--chap ramka_2-->
+          <div class="left_2">
+           <!--chap ramka_2_1-->
+            <div class="left_2_1"><div class="left_2_1_age">Age:</div><%=user.age%></div>
+             <!--/chap ramka_2_1-->
+              <!--chap ramka_2_2-->  
+            <div class="left_2_2"> residence:<%=user.residence%></div>
+             <!--/chap ramka_2_2-->
+            <div class="left_2_3">address:<%=user.address%></div>
+            <div class="left_2_4">languages: <%=user.languages%></div>
+          </div>
+          <!--/chap ramka_2-->
+          <div class="margin"></div>
+           <!--chap ramka_3-->
+          <div class="left_3"></div>
+           <!--/chap ramka_3-->
+          <div class="margin"></div>
+           <!--chap ramka_4-->
+          <div class="left_4"></div>
+           <!--/chap ramka_4-->
+          <div class="margin"></div>
+           <!--chap ramka_5-->
+          <div class="left_5"></div>
+           <!--/chap ramka_5-->
+          <div class="margin"></div>
+        </div>
+        <!--/ chap ramkasi-->
+        <!--orta ramkasi-->
+        <div class="midd_frame"></div>
+        <!--/ orta ramkasi-->
+      <!--ong ramkasi-->
+        <div class="right_frame"></div>
+        <!--/ong ramkasi-->
+      </div>
+
+    </div>
   </body>
 </html>
