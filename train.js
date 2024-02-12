@@ -1,3 +1,17 @@
+// B - Tasc
+function countDigits(string) {
+    let digitCount = 0;
+    for (let char of string) {
+        if (!isNaN(char)) {
+            digitCount++;
+        }
+    }
+    return digitCount;
+}
+//test
+let inputString = "ad2a54y79wet0sfgb9";
+console.log(countDigits(inputString));
+
 // console.log("Jack Ma maslahatlari");
 // const list = [
 //     "yaxshi talaba boling", //0 - 20
