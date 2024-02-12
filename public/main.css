@@ -333,4 +333,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+    color: #767676;
 }
