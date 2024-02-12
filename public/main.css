@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 2px;
-    background:rgb(34, 22, 7);
+    
 }
 .main_frame .left_frame {
     position:relative;
@@ -35,7 +35,7 @@
     margin-right: 27px;
     display: flex;
     flex-direction: column;
-    background: rgb(172, 112, 147);
+    
 }
 .main_frame .right_frame {
     position:relative;
@@ -131,31 +131,40 @@
     width: 220px;
     height: 0px;
     margin-left: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     margin-top: 39px;
     border: 1.5px solid rgb(225, 220, 210)
 }
+
 .main_frame .left_frame .left_2 {
     position:relative;
     width: 221px;
     height: 126px;
     margin-left: 44px;
-    display: inline;
-    flex-direction: column;
-    
-   
+   margin-bottom: px;
 }
 .left_2_1 {
-    display: inline;
+    position:relative;
+    display: flex;
     width: 221px;
     height: 25px;
-   
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
 }
-.left_2_1_age {
-    background-color: chocolate;
-    display: inline;
+.left_2_1_item {
+    display:flex;
+    width: 220px;
     justify-content: space-between;
-    display:flexbox;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #2b2b2b;
+}
+.child-1 {
+   background-color: #ffb400; 
 }
 
 .main_frame .left_frame .left_3 {
@@ -164,15 +173,17 @@
     height: 153px;
     margin-left: 45px;
     margin-top: 25px;
-    background-color: aqua;
+    display:flex;
+    flex-direction: column;
 }
+
 .main_frame .left_frame .left_4 {
     position:relative;
     width: 220px;
     height: 252px;
     margin-left: 45px;
     margin-top: 25px;
-    background-color: aqua;
+    
 }
 .main_frame .left_frame .left_5 {
     position:relative;
@@ -180,5 +191,146 @@
     height: 148px;
     margin-left: 45px;
     margin-top: 25px;
-    background-color: aqua;
+}
+.left_5_1 {
+    position:relative;
+    display: flex;
+    width: 221px;
+    height: 25px;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.left_5_1_item {
+    position: relative;
+  width: 220px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #767676;
+}
+
+.midd_frame_top {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 971px;
+    height: 463px;
+    padding-left:  56px;
+    background: aliceblue;
+     
+}
+.midd_frame_top_left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+.midd_frame_top_left_1 {
+    padding-top: 56px;
+    position: relative;
+    font-size: 48px;
+    line-height: 124%;
+    color: #2b2b2b;
+}
+.midd_frame_top_left_2 {
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #767676;
+
+}
+.avout_me {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: capitalize;
+    width: 424px;
+    color: #767676;
+}
+.midd_frame_top_right {
+    width: 326px;
+    height: 446px; 
+}
+.midd_frame_bot {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 970px;
+    height: 653px;
+    margin-top: 142px;
+    align-items: center;   
+}
+.midd_bot_ser {
+    width: 193px;
+    height: 40px;
+    margin-top: 28px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32;
+    line-height: 123.6%;
+    display: flex;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2b2b2b;
+}
+.midd_bot_val {
+    width: 436px;
+    height: 68px;
+    margin-top: 25px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15;
+    line-height: 160%;
+    display: flex;
+    text-transform: capitalize;
+    color: #767676; 
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: center;
+}
+.card {
+    width: 310px;
+    height: 225px;
+    background-color: #ffffff;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.card-h-text {
+    width: 158px;
+    height: 22px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    text-align: center;
+    color: #282828;
+}
+.card-text {
+    width: 220px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
 }

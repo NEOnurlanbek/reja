@@ -87,15 +87,15 @@
 // }
 // run()
 
-console.log(" A - Task")
-function countLetter(letter, word) {
-    let count = 0;                                  // Harfning necha marta uchrashganligini hisoblash uchun                                              o'zgaruvchini hosil qildik va qiymatini 0 ga tengladik
-    for (let i = 0; i < word.length; i++) {         // Berilgan sozni har bir harfi tekshiramiz
-        if (word[i] === letter) {                   // Agar harf berilgan harf bilan bir xil bo'lsa =>
-            count++;                                // => qiymatni oshiramiz
-        }
-    }
-    return count;                                       //  natijasini qaytaramiz
-}
+// console.log(" A - Task")
+// function countLetter(letter, word) {
+//     let count = 0;                                  // Harfning necha marta uchrashganligini hisoblash uchun                                              o'zgaruvchini hosil qildik va qiymatini 0 ga tengladik
+//     for (let i = 0; i < word.length; i++) {         // Berilgan sozni har bir harfi tekshiramiz
+//         if (word[i] === letter) {                   // Agar harf berilgan harf bilan bir xil bo'lsa =>
+//             count++;                                // => qiymatni oshiramiz
+//         }
+//     }
+//     return count;                                       //  natijasini qaytaramiz
+// }
 
-console.log(countLetter("e", "engineer"));
+// console.log(countLetter("e", "engineer"));
