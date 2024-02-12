@@ -13,7 +13,7 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
     }
 });
 //MongoDB chaqirish
-const db = require("./server").db();
+// const db = require("./server").db();
 
 // 1 kirish kod
 app.use(express.static("public"));

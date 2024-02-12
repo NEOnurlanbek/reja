@@ -1,4 +1,13 @@
 const http = require("http");
+const app = require("./app");
+
+
+const server = http.createServer(app);
+let PORT = 2001;
+server.listen(PORT, function () {
+console.log(`The server in running succesfuli on port: ${PORT}, http://localhost:${PORT}`);
+});
+
 
 // const mongodb = require("mongodb");
 // let db;         
@@ -22,11 +31,5 @@ const http = require("http");
 
 //     }
 // });
-const app = require("./app");
-const server = http.createServer(app);
-let PORT = 2001;
-server.listen(PORT, function () {
-console.log(`The server in running succesfuli on port: ${PORT}, http://localhost:${PORT}`);
-});
 
 
