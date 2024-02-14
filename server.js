@@ -14,6 +14,7 @@ mongodb.connect(connectionString, {
 
         console.log("mongoDB muofaqtlik ulandi");
         module.exports = client;
+        
         const app = require("./app");
         const server = http.createServer(app);
         let PORT = 2001;
