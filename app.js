@@ -2,18 +2,9 @@ console.log("Web serverni boshlash");
 const express = require("express");
 const res = require("express/lib/response");
 const app = express();
-const fs = require("fs");
 
-let user;
-fs.readFile("database/user.json", "utf8", (err, data) => {
-    if(err) {
-        console.log("ERROR:", err)
-    } else {
-     user = JSON.parse(data);
-    }
-});
 //MongoDB chaqirish
-// const db = require("./server").db();
+const db = require("./server").db();
 
 // 1 kirish kod
 app.use(express.static("public"));
