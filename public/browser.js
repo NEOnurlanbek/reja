@@ -47,6 +47,16 @@ document.addEventListener("click", function (e) {
     }
     //edit aperatsiyalar
     if(e.target.classList.contains("edit-me")) {
-        alert("siz edit tugmasini bosdingiz")
+      let userInput = prompt("Ozgartirish kiriting", e.target.parentElement.parentElement.querySelector(".item-text").innertHTML);
+      if (userInput) {
+        console.log(userInput);
+      } 
     }
+});
+
+document.getElementById("clean-all").addEventListener("click", function() {
+  axios.post("/delete-all", { delete_all: true }).then(respose => {
+    alert(respose.data.state);
+    document.location.reload();
+  })
 });

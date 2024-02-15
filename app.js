@@ -38,6 +38,15 @@ app.post("/delete-item", (req, res) => {
     );
     });
 
+    app.post("/delete-all", (req, res) => {
+        if(req.body.delete_all) {
+            db.collection("plans").deleteMany(function() {
+                res.json({ state: "hamma rejalar ochirildi"});
+            });
+
+        }
+    });
+
 
 app.get("/", function(req, res) {
     console.log("user entered /");

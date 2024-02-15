@@ -1,16 +1,63 @@
-// B - Tasc
-function countDigits(string) {
-    let digitCount = 0;
-    for (let char of string) {
-        if (!isNaN(char)) {
-            digitCount++;
-        }
+console.log("D-TASK yechimi:");
+class Shop {
+  constructor(nonlar, lagmonlar, colalar) {
+    this.nonlar = nonlar;
+    this.lagmonlar = lagmonlar;
+    this.colalar = colalar;
+  }
+
+  qoldiq() {
+    const now = new Date();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    console.log(`
+      Hozirbizda ${hour}:${minute}da ${this.nonlar}ta non, ${this.lagmonlar}ta lagmon va ${this.colalar}ta cola mavjud!
+    `);
+  }
+
+  sotish(mahsulot, soni) {
+    if (mahsulot === "non") {
+      this.nonlar -= soni;
+    } else if (mahsulot === "lagmon") {
+      this.lagmonlar -= soni;
+    } else if (mahsulot === "cola") {
+      this.colalar -= soni;
     }
-    return digitCount;
+  }
+
+  qabul(mahsulot, soni) {
+    if (mahsulot === "non") {
+      this.nonlar += soni;
+    } else if (mahsulot === "lagmon") {
+      this.lagmonlar += soni;
+    } else if (mahsulot === "cola") {
+      this.colalar += soni;
+    }
+  }
 }
-//test
-let inputString = "ad2a54y79wet0sfgb9";
-console.log(countDigits(inputString));
+
+const shop = new Shop(4, 5, 2);
+shop.qoldiq();
+shop.sotish("non", 3);
+shop.qabul("cola", 4);
+shop.qoldiq();
+
+
+
+
+// B - Tasc
+// function countDigits(string) {
+//     let digitCount = 0;
+//     for (let char of string) {
+//         if (!isNaN(char)) {
+//             digitCount++;
+//         }
+//     }
+//     return digitCount;
+// }
+ //test
+// let inputString = "ad2a54y79wet0sfgb9";
+// console.log(countDigits(inputString));
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
