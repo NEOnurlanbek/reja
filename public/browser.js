@@ -1,4 +1,8 @@
+
+
 console.log('Frontend JS ishga tushdi');
+
+
 function itemTemplate(item) {
     return`  <li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
     <span class="item-text">${item.reja}</span>
@@ -28,11 +32,20 @@ document.getElementById("create-form").addEventListener("submit", function(e) {
 });
 
 document.addEventListener("click", function (e) {
-    console.log(e);
+    //delit aperatsiyalar
     if(e.target.classList.contains("delete-me")) {
-        alert("siz delate tugmasini bosdingiz")
+        if(confirm("aniq ochirmoqchimisiz ?")) {
+            axios.post("/delete-item", { id: e.target.getAttribute("data-id") })
+            .then((respose) => {
+              console.log(respose.data);
+              e.target.parentElement.parentElement.remove();
+            })
+            .catch((err) => {
+              console.log("ochmadi");
+            });
+        }
     }
-
+    //edit aperatsiyalar
     if(e.target.classList.contains("edit-me")) {
         alert("siz edit tugmasini bosdingiz")
     }
