@@ -4,7 +4,7 @@ console.log('Frontend JS ishga tushdi');
 
 
 function itemTemplate(item) {
-    return`  <li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
+    return ` <li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
     <span class="item-text">${item.reja}</span>
     <div>
         <button data-id="${item._id}" class="edit-me btn btn-secondary btn-sm mr-1">Ozgartirish</button>
@@ -32,7 +32,7 @@ document.getElementById("create-form").addEventListener("submit", function(e) {
 });
 
 document.addEventListener("click", function (e) {
-    //delit aperatsiyalar
+  // ochirish tugmasi
     if(e.target.classList.contains("delete-me")) {
         if(confirm("aniq ochirmoqchimisiz ?")) {
             axios.post("/delete-item", { id: e.target.getAttribute("data-id") })
@@ -45,12 +45,25 @@ document.addEventListener("click", function (e) {
             });
         }
     }
-    //edit aperatsiyalar
+    
+// edit tugmasi
+
     if(e.target.classList.contains("edit-me")) {
-      let userInput = prompt("Ozgartirish kiriting", e.target.parentElement.parentElement.querySelector(".item-text").innertHTML);
-      if (userInput) {
-        console.log(userInput);
-      } 
+      let userInput = prompt("Ozgartirish kiriting",e.target.parentElement.parentElement.querySelector(".item-text").innerHTML);
+      if(userInput) {
+        axios.post("/edit-item", {
+          id: e.target.getAttribute("data-id"),
+          new_input: userInput,
+        }).then((response) => {
+          console.log(response.data);
+          e.target.parentElement.parentElement.querySelector(".item-text").innerHTML = userInput
+
+        }).catch((err) => {
+          console.log("ozgarmadi")
+        })
+      }
+    
+    
     }
 });
 
