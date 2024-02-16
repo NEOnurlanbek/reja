@@ -7,7 +7,7 @@ mongodb.connect(connectionString, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }, (err, client) => {
-    if (err) console.log("ERROR on connection MongoDB");
+    if (err) console.log("ERROR on connection MongoDB",err);
     else {
 
         console.log("mongoDB muofaqtlik ulandi");
