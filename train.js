@@ -1,17 +1,26 @@
-
-// C - task
-function checkContent(str1, str2) {
-  
-  str1 = str1.split('').sort().join('');
-  str2 = str2.split('').sort().join('');
-
-  
-  return str1 === str2;
+// E - task
+function getReverse(str) {
+  return str.split('').reverse().join('');
 }
 
-// Misol
-var result = checkContent("mitgroup", "gmtiprou");
+// Masalan
+const result = getReverse("NURLANBEK");
 console.log(result); 
+
+
+// C - task
+// function checkContent(str1, str2) {
+  
+//   str1 = str1.split('').sort().join('');
+//   str2 = str2.split('').sort().join('');
+
+  
+//   return str1 === str2;
+// }
+
+// // Misol
+// var result = checkContent("mitgroup", "gmtiprou");
+// console.log(result); 
 
 
 // console.log("D-TASK yechimi:");
