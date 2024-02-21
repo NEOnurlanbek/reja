@@ -1,11 +1,31 @@
-// E - task
-function getReverse(str) {
-  return str.split('').reverse().join('');
+// F - task
+function findDoublers(str) {
+  const charMap = {}; 
+
+  for (const char of str) {
+      if (charMap[char]) {
+          return true;
+      } else {
+          charMap[char] = true;
+      }
+  }
+
+  return false; 
 }
 
-// Masalan
-const result = getReverse("NURLANBEK");
-console.log(result); 
+// Test qilish
+const result1 = findDoublers("hello");
+console.log(result1); 
+
+
+// E - task
+// function getReverse(str) {
+//   return str.split('').reverse().join('');
+// }
+
+// // Masalan
+// const result = getReverse("NURLANBEK");
+// console.log(result); 
 
 
 // C - task
