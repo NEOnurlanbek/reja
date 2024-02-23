@@ -1,21 +1,45 @@
-// F - task
-function findDoublers(str) {
-  const charMap = {}; 
+function getHighestIndex(arr) {
+    if (arr.length === 0) {
+        return -1;
+    }
 
-  for (const char of str) {
-      if (charMap[char]) {
-          return true;
-      } else {
-          charMap[char] = true;
-      }
-  }
+    let maxIndex = 0;
+    let maxValue = arr[0];
 
-  return false; 
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > maxValue) {
+            maxValue = arr[i];
+            maxIndex = i; 
+        }
+    }
+
+    return maxIndex;
 }
 
-// Test qilish
-const result1 = findDoublers("hello");
-console.log(result1); 
+const array = [5, 21, 12, 21, 8];
+const result = getHighestIndex(array);
+console.log(result);
+
+
+
+// F - task
+// function findDoublers(str) {
+//   const charMap = {}; 
+
+//   for (const char of str) {
+//       if (charMap[char]) {
+//           return true;
+//       } else {
+//           charMap[char] = true;
+//       }
+//   }
+
+//   return false; 
+// }
+
+// // Test qilish
+// const result1 = findDoublers("hello");
+// console.log(result1); 
 
 
 // E - task
