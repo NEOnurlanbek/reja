@@ -1,7 +1,7 @@
 const http = require("http");
 const mongodb = require("mongodb");
 let db;         
-const connectionString = "mongodb+srv://NEO:Ruqo77HUuqKvySrz@neo.decd3sr.mongodb.net/Reja";
+const connectionString="mongodb+srv://NEO:Ruqo77HUuqKvySrz@neo.decd3sr.mongodb.net/Reja";
 
 mongodb.connect(connectionString, {
     useNewUrlParser: true,
@@ -15,7 +15,7 @@ mongodb.connect(connectionString, {
         
         const app = require("./app");
         const server = http.createServer(app);
-        let PORT = 8000;
+        let PORT=8000;
         server.listen(PORT, function () {
         console.log(`The server in running succesfuli on port: ${PORT}, http://localhost:${PORT}`);
        });

@@ -1,3 +1,4 @@
+// G - Task
 function getHighestIndex(arr) {
     if (arr.length === 0) {
         return -1;
