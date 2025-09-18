@@ -1,3 +1,13 @@
+function randomtop(num, numb) {
+    return Math.floor(Math.random() * (numb * num)) + num;
+   }
+   
+   const javob = randomtop(3,80);
+
+   console.log("result =>", javob);
+   
+
+
 // G - Task
 function getHighestIndex(arr) {
     if (arr.length === 0) {

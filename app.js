@@ -1,6 +1,5 @@
 console.log("Web serverni boshlash");
 const express = require("express");
-const res = require("express/lib/response");
 const app = express();
 
 
@@ -20,8 +19,6 @@ app.set("view engine", "ejs");
 
 // 4 Routing code
 app.post("/create-item", (req, res) => {
-    console.log("user entered /create-item");
-    console.log(req.body);
     const new_reja = req.body.reja;
     db.collection("plans").insertOne({reja: new_reja}, (err, data) => {
         res.json(data.ops[0]);
@@ -47,7 +44,6 @@ app.post("/delete-item", (req, res) => {
     });
     app.post("/edit-item", (req, res) => {
         const data = req.body;
-        console.log(data);
         db.collection("plans").findOneAndUpdate({_id: new mongodb.ObjectId(data.id)}, {$set:{reja:data.new_input}}, function(err, data) {
             res.json({ state: "success"});
         })
